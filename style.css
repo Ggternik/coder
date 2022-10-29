@@ -78,3 +78,16 @@ padding: 20px;
 grid-template-columns: auto auto auto auto;
 }
 
+
+
+/* Mediaqueries */
+
+@media (max-width: 650px) {
+    header {
+      display: none;
+    }
+    nav ul{
+        flex-direction: column;
+        height: 100%;
+    }
+  }
