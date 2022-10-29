@@ -9,6 +9,7 @@ header {
     margin-right: 30px;
 }
 
+
 header img {
     width: 70px;
     height: 70px;
@@ -76,3 +77,4 @@ margin: 0 auto;
 padding: 20px;
 grid-template-columns: auto auto auto auto;
 }
+
