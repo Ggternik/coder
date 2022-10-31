@@ -40,6 +40,7 @@ nav ul{
     height: 50px;
     align-items: center;
     list-style: none;
+
 }
 
 
@@ -68,6 +69,7 @@ font-family: fantasy;
 :hover.caja{
 background-color: pink;
 font-size: x-large;
+transition: all 3s;
 }
 
 .contenedorProductos {
@@ -81,7 +83,7 @@ grid-template-columns: auto auto auto auto;
 
 
 
-/* Mediaqueries */
+/* Mediaqueris */
 
 @media (max-width: 650px) {
     header {
