@@ -66,7 +66,7 @@ line-height: 150px;
 font-family: fantasy;
 }
 
-:hover.caja{
+.caja:hover{
 background-color: pink;
 font-size: x-large;
 transition: all 3s;
@@ -92,5 +92,50 @@ grid-template-columns: auto auto auto auto;
     nav ul{
         flex-direction: column;
         height: 100%;
+        background-color: bisque;
+
     }
   }
+
+  /* Animacion */
+
+  @keyframes animacion {
+    0% {
+        background-color: red;
+    }
+
+    25% {
+        background-color: gold;
+    }
+
+    50% {
+        background-color: green;
+    }
+
+    75% {
+        background-color: black
+    }
+
+    100% {
+        background-color: gray;
+    }
+}
+
+.animacion {
+    background-color: black;
+
+    /* EL NOMBRE DEL KEYFRAME */
+    animation-name: animacion;
+
+    /* CANTIDAD DE REPETICIONES */
+    animation-iteration-count: 1;
+
+    /* SUAVIZAR LA ANIMACIÓN*/
+    animation-timing-function: ease-in;
+
+    /* DURACIÓN DE LA ANIMACIÓN */
+    animation-duration: 2s;
+
+    /* TIEMPO QUE DEMORA EN EMPEZAR OTRA VEZ */
+    animation-delay: 1s;
+}
