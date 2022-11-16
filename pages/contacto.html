@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Store</title>
+    <meta name="keywords" content="compras, store, mates, regalos">
+    <link rel="icon" type="image/jpg" href="/images/favi.png"/>
+
+    <title>Formulario de contacto</title>
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="../style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
     <header>
         <input type="search" placeholder="Buscar">
@@ -24,25 +30,87 @@
         <ul>
             <li><a href="../index.html"><b>Inicio</b></a></li>
             <li><a href="productos.html"><b>Productos</b></a></li>
-            <li><a href=""><b>Contacto</b></a></li>
-            <li><a href=""><b>Politicas de cambio</b></a></li>
+            <li><a href="contacto.html"><b>Contacto</b></a></li>
+            <li><a href="politicas.html"><b>Politicas de cambio</b></a></li>
         </ul>
 
     </nav>
-    
+
+    <div style="border: 1px black solid; padding: 30px;" class="container">
+        <h2 class="text-center">Nos contactaremos a la brevedad</h2>
+        <br>
+
+        <form id="formularioRegistro" name="formularioRegistro" class="needs-validation" method="post" action=""
+            novalidate>
+            <!-- el atributo method: "post" hace un HTTP request de tipo "post", es decir, una solicitud a la app para ejecutar la función doPost()-->
+            <!-- en el atributo action colocamos la URL de la app. Luego asignamos el valor de la URL desde el objeto template en el código -->
+
+
+            <div class="mb-3">
+                <!-- needs-validation para mesajes a los forms que no cumplen validaciones requeridas -->
+                <label for="nombreCompleto" class="form-label">Nombre Completo</label>
+                <!-- clase "form-label" le da el estilo bootstrap a la etiqueta -->
+                <!-- "mb-3" para crear margen y padding con tamaño 3 -->
+                <input type="text" name="nombreCompleto" id="nombreCompleto" class="form-control"
+                    placeholder="Nombre Completo" required>
+                <!-- "novalidate" para deshabilitar mensajes de navegador y mostrar personalizados -->
+                <!-- clase "form-control" para darle el estilo -->
+                <!-- atributo "required" para que se haga la validación -->
+
+            </div>
+
+            <div class="row">
+                <!-- class "row"  para que lo que esté dentro vaya en una fila-->
+                <div class="col">
+                    <!-- clas "col" para especificar que será una columna dentro de la fila -->
+                    <label for="email" class="form-label">Correo Electrónico</label>
+                    <input for="email" class="form-control" name="email" id="email" placeholder="nombre@ejemplo.com"
+                        required>
+                </div>
+
+                <div class="col">
+                    <label for="password" class="form-label">Telefono</label>
+                    <!-- "form-label" para seguir correctamente el tamaño del "form-control" -->
+                    <input type="number" class="form-control" name="number" id="password" placeholder="" required>
+                    <div class="invalid-feedback">
+                        <!-- cuando no coincida con un formato de correo electrónico -->
+                        Dirección de correo electrónico válida
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <button class="btn btn-primary" style="margin-top: 20px;">Enviar</button>
+            </div>
+
+    </div>
+    </div>
+    </div>
+
+    <div class="mb-3">
+
+
+        </form>
+    </div>
 
 
 
     <div class="container">
         <footer class="py-3 my-4">
-          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-          </ul>
-          <p class="text-center text-muted">&copy; Derechos reservados | Guido Galanternik</p>
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+            </ul>
+            <p class="text-center text-muted">&copy; Derechos reservados | Guido Galanternik</p>
         </footer>
-      </div>
+    </div>
 
     <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

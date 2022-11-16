@@ -1,0 +1,5 @@
+@import "variables";
+@mixin center {
+    align-items: $alignItems;
+    list-style: none;
+}
