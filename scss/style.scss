@@ -1,4 +1,4 @@
-@import "variables" , "mixin";
+@import "variables", "mixin";
 
 
 /*Header y nav  */
@@ -35,7 +35,7 @@ header input {
 
 nav ul {
   @include center();
-  display: flex; 
+  display: flex;
   flex-direction: $flexRow;
   justify-content: space-around;
   background-color: $bgColor;
@@ -70,15 +70,27 @@ nav ul {
   }
 }
 
-.contenedorProductos {
-  background-color: $bgColor;
-  display: grid;
-  width: 80%;
-  margin: 0 auto;
-  padding: 20px;
-  grid-template-columns: auto auto auto auto;
+// contenedor de productos
 
+.linkcp {
+
+  text-decoration: none;
+  list-style: none;
+
+  .contenedorProductos {
+    background-color: $bgColor;
+    justify-content: center;
+    display: grid;
+    width: 85%;
+    margin: 0 auto;
+    padding: 10px;
+    grid-template-columns: auto auto auto auto;
+
+  }
 }
+
+
+// pagina de politicas de cambio
 
 .politicas {
   margin-left: 15%;
@@ -141,4 +153,21 @@ nav ul {
 
   /* TIEMPO QUE DEMORA EN EMPEZAR OTRA VEZ */
   animation-delay: 1s;
+}
+
+// Pagina en construccion
+
+
+.main_pc {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+
+
+}
+
+@media (max-width: 650px) {
+  header {
+    flex-direction: column;
+  }
 }

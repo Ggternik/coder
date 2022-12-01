@@ -64,12 +64,17 @@ nav ul {
   transition: all 3s;
 }
 
-.contenedorProductos {
+.linkcp {
+  text-decoration: none;
+  list-style: none;
+}
+.linkcp .contenedorProductos {
   background-color: black;
+  justify-content: center;
   display: grid;
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
-  padding: 20px;
+  padding: 10px;
   grid-template-columns: auto auto auto auto;
 }
 
@@ -120,6 +125,18 @@ nav ul {
   animation-duration: 2s;
   /* TIEMPO QUE DEMORA EN EMPEZAR OTRA VEZ */
   animation-delay: 1s;
+}
+
+.main_pc {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+@media (max-width: 650px) {
+  header {
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
